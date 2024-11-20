@@ -77,3 +77,5 @@ def teleport_player(src: CommandSource, player):
                 src.reply(f"You shouldn't teleport to yourself!")
         else:
             src.reply(f"Sorry but teleport failed, because you don't have enough ender pearls.")
+    else:
+        src.reply("Only players online can execute this commmand!")
