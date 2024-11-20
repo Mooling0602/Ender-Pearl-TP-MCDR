@@ -70,7 +70,7 @@ def teleport_player(src: CommandSource, player):
         cost = config["cost"]
         if count >= cost:
             if executer != target_player:
-                psi.execute(f"clear {player} minecraft:ender_pearl {cost}")
+                psi.execute(f"clear {executer} minecraft:ender_pearl {cost}")
                 psi.execute(f"tp {executer} {target_player}")
                 src.reply(f"Teleport to {target_player} successfully, cost {cost} ender pearls.")
             else:
