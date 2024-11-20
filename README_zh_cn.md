@@ -1,3 +1,5 @@
+- 还没有开始翻译，后面会补，咕咕咕～
+
 # Ender Pearl TP-MCDR
 Cost some ender pearls to teleport to anywhere, a xyz position, or someone.
 
