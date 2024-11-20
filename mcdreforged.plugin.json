@@ -1,0 +1,16 @@
+{
+    "id": "ender_pearl_tp",
+    "version": "0.0.1",
+    "name": "Ender Pearl TP",
+    "description": {
+      "en_us": "Cost some ender pearls to teleport to anywhere!",
+      "zh_cn": "花费一定数量的末影珍珠传送到任意坐标！"
+    },
+    "author": "Mooling0602",
+    "link": "https://github.com/Mooling0602/MCDRSimplePlugins",
+    "dependencies": {
+      "mcdreforged": ">=2.0",
+      "minecraft_data_api": ">=1.4",
+      "more_command_nodes": ">=1.0"
+    }
+  }
