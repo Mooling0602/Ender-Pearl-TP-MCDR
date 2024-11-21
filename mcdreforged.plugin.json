@@ -1,6 +1,6 @@
 {
     "id": "ender_pearl_tp",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "name": "Ender Pearl TP",
     "description": {
       "en_us": "Cost some ender pearls to teleport to anywhere!",

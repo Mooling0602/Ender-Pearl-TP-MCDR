@@ -1,0 +1,18 @@
+ender_pearl_tp:
+  on_load: Loading Ender Pearl TP!
+  tp_back:
+    success: No refunds for ender pearls you have cost.
+    failed: You have requested to teleport you back! Please request after next time you cost ender pearls.
+    no_data: You haven't cost ender pearls to teleport!
+  tp_xyz:
+    success: Teleport to %xyz% successfully, cost %cost% ender pearls, you still have %rest% ender pearl(s).
+    failed: Sorry but teleport failed, because you don't have enough ender pearls.
+  tp_player:
+    success: Teleport to %target_player% successfully, cost %cost% ender pearls, you still have %rest% ender pearl(s).
+    failed:
+      reason: The player you want to teleport is offline or not exist, or your server don't provide a vaild method to detect if a player is online.
+      result: "Teleport failed! Thinking enable Rcon in MCDR or install MCDR plugin OnlinePlayerAPI(id: online_player_api), you may need to restart MCDR."
+    warning: 
+      no_target: You shouldn't teleport to yourself!
+      cant_cost: Sorry but teleport failed, because you don't have enough ender pearls.
+  no_perm: Only players online can execute this commmand!
