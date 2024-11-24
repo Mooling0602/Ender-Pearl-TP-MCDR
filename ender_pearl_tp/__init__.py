@@ -95,14 +95,15 @@ def teleport_xyz(src: CommandSource, position):
 
 def rcon_online_check(player: str):
     response: str = psi.rcon_query("list")
-    match = re.match(r"There are \d+ of a max of \d+ players online:", response)
-    if match:
-        names_section = response[match.end():].strip()
-        online_list = [name.strip() for name in names_section.split(",")]
-        if player in online_list:
-            return True
-        else:
-            return False
+    if response is not None:
+        match = re.match(r"There are \d+ of a max of \d+ players online:", response)
+        if match:
+            names_section = response[match.end():].strip()
+            online_list = [name.strip() for name in names_section.split(",")]
+            if player in online_list:
+                return True
+            else:
+                return False
     else:
         return False
 
