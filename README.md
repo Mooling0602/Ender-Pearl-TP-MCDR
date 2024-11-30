@@ -8,7 +8,7 @@ This plugin may works fine in the server MCDR supported.
 ## Usage
 Use `!!etp <player_name>` to teleport to someone.
 
-Use `!!etp Pos <x> <y> <z>` to teleport to a xyz-like position.
+Use `!!etp pos <x> <y> <z>` to teleport to a xyz-like position.
 
 Use `!!etp back` to teleport back with no refunds of ender pearls you cost.
 
