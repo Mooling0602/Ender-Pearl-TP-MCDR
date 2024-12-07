@@ -1,7 +1,7 @@
 import re
 
 from mcdreforged.api.all import *
-from more_command_nodes import Position
+from more_command_nodes import Position # type: ignore
 import minecraft_data_api as api
 
 psi = ServerInterface.psi()
@@ -40,9 +40,11 @@ def get_backpack_info(player: str):
 
 def get_player_pos(player: str):
     global position_data
-    result: list = api.get_player_info(player, "Pos")
+    position: list = api.get_player_info(player, "Pos")
+    dimension: str = api.get_player_info(player, "Dimension")
     position_data[player] = {
-        'position': result,
+        'position': position,
+        'dimension': dimension,
         'allow_back': True
     }
 
@@ -53,8 +55,9 @@ def tpback_player(src: CommandSource):
         allow_back = position_data[player]['allow_back']
         if allow_back:
             position = position_data[player]['position']
+            dimension = position_data[player]['dimension']
             xyz = format_position(position)
-            psi.execute(f"tp {player} {xyz}")
+            psi.execute(f"execute in {dimension} run tp {player} {xyz}")
             position_data[player]['allow_back'] = False
             src.reply(psi.tr("ender_pearl_tp.tp_back.success"))
         else:
