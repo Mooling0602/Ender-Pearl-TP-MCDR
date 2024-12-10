@@ -1,4 +1,7 @@
 ender_pearl_tp:
+  api_not_found: "Needed plugin not found: death_back, please install or update it with plugin manager."
+  api_not_enabled: "Not enabled: config.enable_death_back"
+  api_registered: "Registered dependency: death_back" 
   on_load: Loading Ender Pearl TP!
   tp_back:
     success: No refunds for ender pearls you have cost.
@@ -6,7 +9,6 @@ ender_pearl_tp:
     no_data: You haven't cost ender pearls to teleport!
   tp_xyz:
     success: Teleport to %xyz% successfully, cost %cost% ender pearls, you still have %rest% ender pearl(s).
-    failed: Sorry but teleport failed, because you don't have enough ender pearls.
   tp_player:
     success: Teleport to %target_player% successfully, cost %cost% ender pearls, you still have %rest% ender pearl(s).
     failed:
@@ -14,5 +16,7 @@ ender_pearl_tp:
       result: "Teleport failed! Thinking enable Rcon in MCDR or install MCDR plugin OnlinePlayerAPI(id: online_player_api), you may need to restart MCDR."
     warning: 
       no_target: You shouldn't teleport to yourself!
-      cant_cost: Sorry but teleport failed, because you don't have enough ender pearls.
+  tp_death:
+    success: Teleport to the place you died successfully, cost %cost% ender pearls, you still have %rest% ender pearl(s).
+  not_enough: Sorry but teleport failed, because you don't have enough ender pearls.
   no_perm: Only players online can execute this commmand!

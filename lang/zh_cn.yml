@@ -1,4 +1,7 @@
 ender_pearl_tp:
+  api_not_found: 没有找到需要的插件：death_back，请使用插件管理器安装或更新。
+  api_not_enabled: 未启用config.enable_death_back！
+  api_registered: 注册依赖项完成：death_back
   on_load: 正在加载[ETP]末影珍珠传送插件！
   tp_back:
     success: 已经花费的末影珍珠恕不退还。
@@ -6,7 +9,6 @@ ender_pearl_tp:
     no_data: 您还没有花费末影珍珠进行过传送。
   tp_xyz:
     success: 成功传送到坐标%xyz%，花费了%cost%末影珍珠，您还剩下%rest%个末影珍珠。
-    failed: 很抱歉但因为您的末影珍珠不够了所以无法进行传送。
   tp_player:
     success: 成功传送到玩家%target_player%，花费了%cost%末影珍珠，您还剩下%rest%个末影珍珠。
     failed:
@@ -14,5 +16,7 @@ ender_pearl_tp:
       result: "传送失败！考虑启用MCDR的Rcon功能，或者安装这个MCDR插件：OnlinePlayerAPI(id: online_player_api)，您可能需要重启MCDR。"
     warning: 
       no_target: 您不应该传送到你自己！
-      cant_cost: 很抱歉但因为您的末影珍珠不够了所以无法进行传送。
+  tp_death:
+    success: 成功传送到你先前死亡的地方，花费了%cost%末影珍珠，您还剩下%rest%个末影珍珠。
+  not_enough: 很抱歉但因为您的末影珍珠不够了所以无法进行传送。
   no_perm: 只有在线玩家可以执行这个命令！
